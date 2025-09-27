@@ -24,14 +24,15 @@ Here is an example on how to use the Event struct:
 ```rust
 use tokio;
 use ewait::Event;
+use std::sync::Arc;
 
-async fn hello() {
+async fn hello(_: Arc<()>) {
     println!("Hello World!")
 }
 
 #[tokio::main]
-fn main() {
-    let event1: Event<()> = Event::new();
+async fn main() {
+    let mut event1: Event<()> = Event::new();
     event1.connect(hello);
     event1.fire(());
 }
