@@ -1,5 +1,6 @@
 use std::sync::Arc;
 use std::vec::IntoIter;
+use std::future::Future;
 use futures::future::join_all;
 use tokio::task::{JoinError, JoinHandle};
 use std::fmt::{Debug, Formatter};
@@ -27,16 +28,17 @@ impl<T: Send + Sync + 'static, R: Send + 'static> Event<T, R> {
     }
 
     // Connects a function to the Event
-    pub fn connect<F>(&mut self, callback: F) -> usize
+    pub fn connect<F, Fut>(&mut self, callback: F) -> usize
     where
-        F: Fn(Arc<T>) -> R + Send + Sync + 'static,
+        F: Fn(Arc<T>) -> Fut + Send + Sync + 'static,
+        Fut: Future<Output = R> + Send + 'static
     {
         let arc_cb = Arc::new(callback);
 
         let cb: Arc<Callback<T, R>> = Arc::new(move |data: Arc<T>| {
             let c = Arc::clone(&arc_cb);
             tokio::spawn(async move {
-                (c)(data)
+                (c)(data).await
             })
         });
 
