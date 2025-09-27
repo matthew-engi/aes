@@ -9,6 +9,8 @@
 
 Ewait allows developers to create **events that can trigger multiple callbacks concurrently**, making it easier to build event-driven code.
 
+---
+
 ## Features
 
 * **Concurrent execution of callbacks**
