@@ -2,7 +2,7 @@
 name = "ewait"
 version = "0.1.0"
 edition = "2024"
-authors = ["matthew.lacasse.engi@gmail.com>"]
+authors = ["matthew.lacasse.engi@gmail.com"]
 description = "A thread-safe, asynchronous event system for Rust"
 license = "MIT"
 repository = "https://github.com/matthew-engi/ewait"
