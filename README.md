@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/3b5ff7bf-a012-4483-b700-69db67537ccf"/>
+  <img src="https://github.com/user-attachments/assets/9d096dce-49ff-49b3-96a4-70291abc4221"/>
 </div>
 
-<h1 align="center">Aes</h1>
+<h1 align="center">Aes (Asynchronous Event System)</h1>
 <p align="center">
   A thread-safe, asynchronous event system for Rust.
 </p>
