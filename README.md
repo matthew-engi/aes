@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/61fabea7-f4d6-446a-a54b-07a617465a27"/>
+  <img src="https://github.com/user-attachments/assets/3b83f1d2-c1fd-4a80-95bd-71af86853b3f"/>
 </div>
 
-<h1 align="center">Ewait - Asynchronous Event System</h1>
+<h1 align="center">ewait - Asynchronous Event System</h1>
 <p align="center">
   A thread-safe, asynchronous event system for Rust.
 </p>
@@ -16,6 +16,8 @@ Ewait allows th creation of **events that can trigger multiple callbacks paralle
 * Every connected callback runs in its own Tokio task, allowing parallel execution.
 
 * Provides easy methods to connect, disconnect, and fire events, keeping your code clean.
+
+---
 
 > [!WARNING]
 > This library requires a Tokio runtime to function. Make sure your `main` function uses `#[tokio::main]`.
