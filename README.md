@@ -2,12 +2,12 @@
   <img src="https://github.com/user-attachments/assets/cf0ad217-1d4f-4b47-9935-3aaaf9b36846"/>
 </div>
 
-<h1 align="center">Aes (Asynchronous Event System)</h1>
+<h1 align="center">Ewait - Asynchronous Event System</h1>
 <p align="center">
   A thread-safe, asynchronous event system for Rust.
 </p>
 
-Aes allows developers to create **events that can trigger multiple callbacks concurrently**, making it easier to build event-driven code.
+Ewait allows developers to create **events that can trigger multiple callbacks concurrently**, making it easier to build event-driven code.
 
 ## Features
 
