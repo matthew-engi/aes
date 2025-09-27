@@ -2,6 +2,12 @@
 name = "aes"
 version = "0.1.0"
 edition = "2024"
+authors = ["matthew.lacasse.engi@gmail.com>"]
+description = "A thread-safe, asynchronous event system for Rust"
+license = "MIT"
+repository = "https://github.com/matthew-engi/avs"
+keywords = ["event", "async", "tokio"]
+categories = ["asynchronous", "data-structures"]
 
 [dependencies]
 futures = "0.3.31"
