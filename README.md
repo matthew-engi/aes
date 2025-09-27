@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/e4e3491e-969e-45c2-9f9b-b9d05f7c5743"/>
+  <img src="https://github.com/user-attachments/assets/61fabea7-f4d6-446a-a54b-07a617465a27"/>
 </div>
 
 <h1 align="center">Ewait - Asynchronous Event System</h1>
