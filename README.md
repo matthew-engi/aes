@@ -1,4 +1,4 @@
-# Event
+# Avent (Asynchronous Event System)
 
 A thread-safe, asynchronous event system for Rust. This library allows you to register multiple callbacks, fire events concurrently, and handle synchronous callbacks safely.
 
