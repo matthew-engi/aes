@@ -6,14 +6,14 @@
   A thread-safe, asynchronous event system for Rust.
 </p>
 
-Ewait allows th creation of **events that can trigger multiple callbacks parallely**, making it easier to build event-driven code.
+Ewait allows the creation of **events that can trigger multiple callbacks parallely**, making it easier to build event-based code.
 
 ---
 
 ## Features
 
 * Every connected callback runs in its own Tokio task, allowing parallel execution.
-* Provides easy methods to connect, disconnect, and fire events, keeping your code clean.
+* Provides easy methods to connect, disconnect, and fire events.
 * Conveniently provides a `JoinHandle<R>` to `.await` results to if the results are of interest.
 * Automatically manages the distribution of Arc references between threads.
 
